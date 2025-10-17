@@ -1,0 +1,126 @@
+/* Сброс */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+:focus, :active { outline: none; }
+a:focus, a:active { outline: none; }
+nav, footer, header, aside { display: block; }
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+img { max-width: 100%; height: auto; display: block; }
+ul li { list-style: none; }
+
+/* Основное */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: rgb(189, 170, 129);
+  padding: 15px;
+  color: white;
+}
+
+[class*="_container"] {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Изображения блоков */
+.intro div[class^="itro__img"] {
+  height: 200px;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.itro__img-1 { background-image: url(../img/IMG_6406.JPG); }
+.itro__img-2 { background-image: url(../img/IMG_6408.JPG); }
+.itro__img-3 { background-image: url(../img/IMG_6410.GIF); }
+.itro__img-4 { background-image: url(../img/IMG_6411.GIF); }
+
+/* Текст */
+.preview__title, .frends__title, .dress-code__title, .doping__title, .contacts__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.preview__subtitle, .frends__text, .dress-code__text, .doping__subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Ссылки */
+a {
+  color: #fff;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+/* ======== АДАПТИВ ======== */
+
+/* Планшеты */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  [class*="_container"] {
+    max-width: 600px;
+  }
+
+  .preview__title, .frends__title, .dress-code__title, .doping__title, .contacts__title {
+    font-size: 22px;
+  }
+
+  .preview__subtitle, .frends__text, .dress-code__text, .doping__subtitle {
+    font-size: 15px;
+  }
+
+  .intro div[class^="itro__img"] {
+    height: 150px;
+  }
+}
+
+/* Смартфоны */
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 8px;
+  }
+
+  [class*="_container"] {
+    max-width: 100%;
+  }
+
+  .preview__title, .frends__title, .dress-code__title, .doping__title, .contacts__title {
+    font-size: 18px;
+  }
+
+  .preview__subtitle, .frends__text, .dress-code__text, .doping__subtitle {
+    font-size: 14px;
+  }
+
+  .intro div[class^="itro__img"] {
+    height: 120px;
+  }
+
+  .contacts__list {
+    text-align: center;
+  }
+
+  .contacts__item a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
